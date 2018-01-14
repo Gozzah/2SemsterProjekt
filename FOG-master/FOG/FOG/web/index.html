@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+     <link rel="stylesheet" type="text/css" href="FOGcss.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        body{
+            background-image: url("http://www.lyngby-boldklub.dk/gfx/top_images/overfoerslerfragammel/22.10.2015_07.17.41XDgPo.JPG" ); 
+            background-size: 100%;
+        }
+    </style>
+
+    <nav class="navbar navbar-light" style="background-color: black;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Log ind</a></li>
+                <li><a href="Register.jsp">Opret bruger</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <form action="UserServlet" method="GET">
+        <div class="center">
+        <div class="col-xs-3">
+
+            <input type="text" class="form-control input-block" placeholder="Brugernavn" name="username" value=""/>
+
+            <input type="password" placeholder="Password" name="password" id="password" value="" 
+            class="form-control input-block" required="">
+
+            <button style="background-color: green; color: black;" type="submit" class="btn btn-block">Log ind</button><br/>
+            </div>
+        </div>
+    </form>
+   
+</body>
+</html>
+
